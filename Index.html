@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahendra | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    #hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #00adb5;
+      color: white;
+    }
+
+    #hero h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .skills, .projects, .certifications {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #555;
+    }
+
+    @media(max-width: 600px) {
+      #hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mahendra</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Hello, I'm Mahendra</h1>
+    <p>Aspiring Web Developer</p>
+    <br>
+    <button onclick="scrollToSection('contact')">Hire Me</button>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+     I’m a passionate software developer enthusiast with a strong interest in building innovative and efficient solutions. I enjoy learning new technologies, and turning ideas into practical applications. I’m eager to collaborate with dynamic teams, contribute to impactful projects, and continuously grow through hands-on experience and technical excellence.
+    </p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">java</div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>LearnLoop</h3>
+        <p>LearnLoop is an interactive e-learning platform designed to make education more engaging and accessible. It provides structured courses, simplified explanations, and user-friendly learning resources to help students build strong conceptual understanding and improve their skills efficiently.
+
+If you want, I can also:
+
+make it look like a real startup product description
+or add features + technologies used (HTML, CSS, JS, etc.)
+or write a KnowledgeHub description in same style.</p>
+      </div>
+      <div class="card">
+        <h3>KnowledgeHub</h3>
+        <p>KnowledgeHub is an interactive knowledge management platform built to simplify access to educational content and learning resources. It enables users to explore, share, and organize study materials efficiently, helping improve learning productivity and collaboration among students.
+
+If you want, I can also:
+
+make LearnLoop + KnowledgeHub sound like a startup combo project
+or add features section (like login, notes, quizzes, etc.)
+or help you write a resume project description for interviews.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="container">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <div class="card">Web Development Certification</div>
+      <div class="card">Data Science Certification</div>
+    </div>
+  </section>
+
+  <section id="Resume" class="container">
+    <h2>Resume</h2>
+    <p>You can download my resume below:</p>
+    <br>
+    <a href="c:\Users\Administrator\Downloads\Resume Template-2.pdf" download>
+      <button>Download Resume</button>
+    </a>
+  </section>
+
+    <section id="contact" class="container">
+    <h2>Contact</h2>
+
+    <p>
+        Email:
+        <a href="mailto:mahi.ds.svpcet.00@gmail.com">
+            arshiyaaisvpcet@gmail.com
+        </a>
+    </p>
+
+    <p>
+        Phone:
+        <a href="tel:8074633969">
+            8074633969
+        </a>
+    </p>
+</section>
+
+
+<p>
+  LinkedIn:
+  <a href="https://www.linkedin.com/in/ds-mahi-19b42a358?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+    <button>View My LinkedIn</button>
+  </a>
+</p>
+  <footer>
+    <p>© 2026 Mahendra</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  </script>
+
+</body>
+</html>
